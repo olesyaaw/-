@@ -1,6 +1,29 @@
 /*первым идет шрифт*/
 body
 {
+    h2.highligh{
+         color: #222222;
+    display: grid;
+    position: absolute;
+    width: 357px;
+    height: 60px;
+    left: 80px;
+    top: 64px;
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #222222;}
+
+    background-color: aliceblue;
+a{
+    color :#222222;
+    text-decoration: none;
+}}
+
 .header {
 
 }
@@ -16,3 +39,6 @@ body
 .header__link {
 
 }
+
+
+
