@@ -1,44 +1,41 @@
-/*первым идет шрифт*/
-body
-{
-    h2.highligh{
-         color: #222222;
-    display: grid;
-    position: absolute;
-    width: 357px;
-    height: 60px;
-    left: 80px;
-    top: 64px;
-
-    font-family: 'Gotham Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-
-    color: #222222;}
-
-    background-color: aliceblue;
-a{
-    color :#222222;
+body{ 
+    background-color:whitesmoke ;
+}
+header {
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+}
+div.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav {
+    width: 70%;
+}
+a {
     text-decoration: none;
-}}
-
-.header {
-
 }
-
-.logo {
-
+img {
+    max-width: 100%;
 }
-
-.header__nav {
-
-}
-
-.header__link {
-
-}
-
-
-
+   .bottom-bar {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+     .catalog-button {
+      background-color: #1C69D4;
+      border: none;
+      padding: 8px 18px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      flex: 0 0 auto;
+      user-select: none;
+    }
