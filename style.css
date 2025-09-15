@@ -96,20 +96,48 @@ a {
     color: #000000;
 }
 .right-nav a {
+    
     gap: 24px;
 }
+.white-rectangle {
+    width: 460px; 
+    height: 216px; 
+    background-color: white;
+    position: center;
+    top: 0;
+    left: 30;
+}
+
 .body_fon{
   position: relative;
 }
-
+.felix{
+  position: absolute;
+  top: 33px;
+  left: 160px;;
+}
 .motor{
   position: absolute;
   top: 15px;
   left: 776px;;
 }
-
 .fon {
   position: relative;
   top: 0;
   left: 0;
+}
+
+
+.advertising{
+  position: relative;
+}
+.rosdot{
+  position: absolute;
+  top: 0;
+  left: 520;
+}
+.awm{
+  position: relative;
+  top: 0;
+  left: 30;
 }
