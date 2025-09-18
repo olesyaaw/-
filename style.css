@@ -23,13 +23,19 @@ a {
 
    .bottom-bar {
       margin-right: auto;
-      margin-top: 12px;
+      margin-top: 0px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
       flex-wrap: wrap;
     }
+
+    
+  .search-container input {
+      width: 1500px;
+    }
+
     .catalog-button {
       background-color: #1C69D4;
       border: none;
@@ -58,7 +64,6 @@ a {
 
 .header-nav button{
     line-height: 20px;
-
     outline: none;
     border: none;
     max-height: 20px;
@@ -72,14 +77,7 @@ a {
     height: 19px;
     width: 18px;
 }
- h2{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 10;
-    gap: 20px;
- }
+ 
 .header__link { 
     font-size: 15px;   
     color:#000000;
@@ -94,76 +92,118 @@ a {
 }
  
 
+/* Похуй, все что ниже тоже чекай  */
 
-.body_fon{
-  margin: 30px 50px 50px 30px;
-  position: relative;
+.body_fon {
+    position: relative;
+    margin: 30px 50px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Тут почитай  */
+    background-image: url('images/fon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
 }
-.felix{
+
+
+.body_fon .text-overlay{
+  color: #FFFFFF;
+  margin-top: -350px;
+  position: relative;
+  margin-right: 1140px;
+
+}
+
+.next {
+    display: flex;
+    gap: 10px;
+    margin-left: 1550px;
+}
+
+.box_hover{
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+.vpered {
   position: absolute;
-  top: 33px;
-  left: 160px;; 
+  margin-left: 110px;
+  margin-top: 30px;
+  width: 34px;
+  z-index: 0;
 }
-.motor{
+.nazad {
+  transform: scaleX(-1);
   position: absolute;
-  top: 15px;
-  left: 776px;;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 34px;
+  z-index: 0;
 }
-.fon {
-  position: relative;
-  top: 0;
-  left: 0;
+.box{
+  width: 80px;
+  height: 80px;
+  background-color: #FFFFFF;
+  opacity: 0.4;
 }
-.rosdot{
-  position: relative;
-  top: 0;
-  left: 520;
+
+h2{
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 10;
+ }
+
+h5{
+
+    font-size: 16px;
+    line-height: 150px;
+    font-weight: 10;
 }
-.awm{
-  position: relative;
-  top: 0;
-  left: 30;
-}
- 
-/* .rectangle-container {
-    display: grid;
-    grid-template-columns: repeat(3, 460px);
-    gap: 30px;
-    padding: 30px;
+h6{
     position: absolute;
-    top: 220px;
-    z-index: 10;
-    
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 10;
+    margin-left: 1000PX;
+ }
+
+.felix{
+    position: absolute;
+    top: 33px;
+    left: 160px;
 }
 
-.white-rectangle {
-    width: 100%; 
-    height: 216px;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}  */
+.motor {
+    position: relative;
+    z-index: 5;
+}
+
 .rectangle-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
     gap: 30px;
-    padding: 20px;
-
-    /* Позиционирование по центру */
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Сдвигаем на половину ширины/высоты контейнера */
-
-    /* Ограничим максимальную ширину */
-    max-width: 1400px;
     width: 100%;
-
-    z-index: 10; /* Чтобы был поверх картинок */
+    max-width: 1400px;
+    z-index: 10;
 }
 
 .white-rectangle {
     height: 216px;
     background-color: white;
+    padding: 20px;
+}
+
+.awm, .rosdot {
+    z-index: 5;
 }
 
 .header-down {
